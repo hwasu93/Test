@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>{{ context.title }}</title>
+    <link rel="stylesheet" href="{% static 'bootstrap4/css/bootstrap.min.css' %}">
+</head>
+<style>
+</style>
+<body>
+    <script src="{% static 'bootstrap4/js/bootstrap.js' %}"></script>
+    <!--<script src="{% static 'scripts/jquery-1.10.2.min.js' %}"></script>-->
+{% block body %}{% endblock %}
+</body>
+</html>
